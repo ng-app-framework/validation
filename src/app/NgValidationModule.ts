@@ -1,13 +1,13 @@
 import {NgModule} from '@angular/core';
-import {CoreModule} from "@ng-app-framework/core";
+import {NgCoreModule} from "@ng-app-framework/core";
 
 @NgModule({
     imports  : [
-        CoreModule
+        NgCoreModule
     ],
     providers: []
 })
-export class ValidationModule {
+export class NgValidationModule {
 
     constructor() {
     }
