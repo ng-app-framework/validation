@@ -1,4 +1,5 @@
-import {optional, validate} from "../../src/app/Decorator";
+import {optional, validate} from "../../src/app/Decorator/Validate";
+
 describe('Validate Decorator', () => {
     it('Should validate arguments based on a list of options (and order should not matter)', () => {
         class ValidationTest {
@@ -9,10 +10,11 @@ describe('Validate Decorator', () => {
             }
 
             @validate
-            giveMeSomethingNullable(arg1: string, @optional arg2?: any ) {
+            giveMeSomethingNullable(arg1: string, @optional arg2?: any) {
 
             }
         }
+
         let object = new ValidationTest();
         expect(() => object.giveMeSomethingGood('here is a string', {})).not.toThrow();
         expect(() => object.giveMeSomethingGood(<any>{}, 'here is a string')).toThrow();

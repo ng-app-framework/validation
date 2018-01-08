@@ -1,4 +1,4 @@
-import {Observer} from "rxjs/Rx";
+import {Observer} from "rxjs";
 import {ValidationRule} from "../Interface/ValidationRule";
 import {ContainerValidator} from "./ContainerValidator";
 import {ValidatorException} from "../../Exception/ValidatorException";

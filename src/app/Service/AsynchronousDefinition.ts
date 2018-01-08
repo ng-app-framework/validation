@@ -1,5 +1,5 @@
 import {Validator} from "./Interface/Validator";
-import {Observable} from "rxjs/Rx";
+import {Observable} from "rxjs";
 
 export class AsynchronousDefinition implements Validator {
     constructor(public validator: Validator) {

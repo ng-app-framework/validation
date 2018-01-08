@@ -1,4 +1,4 @@
-import {Observer} from "rxjs/Rx";
+import {Observer} from "rxjs";
 import {NumberValidator} from "./NumberValidator";
 import {ValidatorException} from "../../Exception/ValidatorException";
 

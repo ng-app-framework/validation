@@ -1,4 +1,4 @@
-import {Assert} from "../../src/app/Service";
+import {Assert} from "../../src/app/Service/Assert";
 
 class TestClass {
 
