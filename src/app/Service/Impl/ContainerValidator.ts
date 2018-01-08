@@ -1,4 +1,4 @@
-import {Observable} from "rxjs";
+import {Observable} from "rxjs/Rx";
 import {BaseValidator} from "./BaseValidator";
 
 export class ContainerValidator extends BaseValidator {

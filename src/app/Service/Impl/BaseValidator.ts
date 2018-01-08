@@ -1,5 +1,5 @@
 import {Value}                from "@ng-app-framework/core";
-import {Observable, Observer} from "rxjs";
+import {Observable, Observer} from "rxjs/Rx";
 import {ValidationRule}       from "../Interface/ValidationRule";
 import {Validator}            from "../Interface/Validator";
 import {ValidatorException}   from "../../Exception/ValidatorException";

@@ -1,4 +1,4 @@
-import {Observer} from "rxjs";
+import {Observer} from "rxjs/Rx";
 import {Validator} from "./Validator";
 
 export interface ValidationRule extends Validator {
