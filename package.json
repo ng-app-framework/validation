@@ -1,6 +1,6 @@
 {
     "name": "@ng-app-framework/validation",
-    "version": "1.1.16",
+    "version": "1.1.17",
     "license": "MIT",
     "keywords": [
         "ng-app",
@@ -67,7 +67,7 @@
             "entryFile": "index.ts",
             "externals": {
                 "rxjs/Rx": "rxjs",
-                "reflect-metadata":"reflect-metadata",
+                "reflect-metadata": "reflect-metadata",
                 "@ng-app-framework/core": "ng-app-core"
             }
         }
