@@ -17,13 +17,17 @@ export class BaseValidator implements Validator, ValidationRule {
 
     public validate$(value: any) {
         return new Observable(observer => {
-            if (this.isAndCanBeEmpty(value)) {
-                return observer.complete();
+            try {
+                if (this.isAndCanBeEmpty(value)) {
+                    return observer.complete();
+                }
+                if (!(this.isValueOfType(value, this.type))) {
+                    return observer.error(new ValidatorException(`${this.name} was not of type ${this.type.name}`));
+                }
+                this.applyRule(value, observer);
+            } catch (e) {
+                observer.error(e);
             }
-            if (!(this.isValueOfType(value, this.type))) {
-                throw new ValidatorException(`${this.name} was not of type ${this.type.name}`);
-            }
-            this.applyRule(value, observer);
         });
     }
 

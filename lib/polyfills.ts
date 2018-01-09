@@ -17,7 +17,7 @@ import 'core-js/es6/set';
 import 'core-js/es6/reflect';
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
-
+import 'reflect-metadata';
 
 import 'rxjs/add/observable/of';
 import 'rxjs/add/observable/from';

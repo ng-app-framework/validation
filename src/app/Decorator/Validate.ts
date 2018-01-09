@@ -1,7 +1,6 @@
 import {Assert, AssertOptions} from "../Service/Assert";
-import {getArgs} from "./getArgs";
-import {Value} from "@ng-app-framework/core";
-import 'reflect-metadata';
+import {getArgs}               from "./getArgs";
+import {Value}                 from "@ng-app-framework/core";
 
 function getAssertionMethod(dataType: any, method?: string) {
     let attemptedMethod = dataType.name.toLowerCase();
@@ -29,7 +28,6 @@ function validateMethod(descriptor: any, target: Object, propertyName: string) {
     descriptor.value = function (...args: any[]) {
         let className = this.constructor._name || this.constructor.name;
         let types     = Reflect.getOwnMetadata("design:paramtypes", target, propertyName);
-        console.log(types);
         for (let index in argNames) {
             Assert.validate(
                 getAssertionType(
