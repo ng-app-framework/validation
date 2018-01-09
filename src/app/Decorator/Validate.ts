@@ -1,6 +1,7 @@
 import {Assert, AssertOptions} from "../Service/Assert";
 import {getArgs}               from "./getArgs";
 import {Value}                 from "@ng-app-framework/core";
+import 'reflect-metadata';
 
 function getAssertionMethod(dataType: any, method?: string) {
     let attemptedMethod = dataType.name.toLowerCase();
